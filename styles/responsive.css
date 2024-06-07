@@ -1,24 +1,97 @@
-@media (min-width:575.99px) {
+@media (min-width:480px) {
+  .footer__right {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-list-container,
+  .footer__left {
+    text-align: left;
+  }
+
+  .footer-list-container {
+    margin-top: 0;
+  }
 }
 
+@media (min-width:575.99px) {}
+
 @media (min-width:767.99px) {
-  .nav-menu,.nav__btn {
+
+  .nav-menu,
+  .nav__btn {
     display: none;
   }
+
   .menu {
     display: flex;
+  }
+
+  .newsletter {
+    display: flex;
+    padding: 3rem;
+    text-align: left;
+  }
+
+  .newsletter__image {
+    width: 31rem;
+  }
+
+  .newsletter__content {
+    width: 45%;
+  }
+
+  .newsletter__title {
+    max-width: none;
+  }
+
+  .newsletter__caption {
+    max-width: 90%;
+  }
+
+  .footer__left {
+    margin: 0;
+    margin-bottom: 3rem;
   }
 }
 
 @media (min-width:991.99px) {
+  .header {
+    min-height: 80rem;
+  }
+
   .header__links {
     display: flex;
   }
+
+  .newsletter {
+    padding: 3rem 7rem;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__left {
+    max-width: 45%;
+  }
+
+  .footer__right {
+    min-width: 50%;
+  }
+
+  .download-app {
+    text-align: left;
+    margin-top: 0;
+  }
 }
 
-@media (min-width:1199.99px) {
-  
-}
+@media (min-width:1199.99px) {}
+
 @media (min-width:1399.99px) {
-  
+  .footer__left {
+    max-width: 35%;
+  }
 }
